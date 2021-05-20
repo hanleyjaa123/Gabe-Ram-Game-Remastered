@@ -6,15 +6,18 @@ using UnityEngine.UI;
 public class RamCounter : MonoBehaviour
 {
 
-    public int ramCount;
+    public GameManager gameManager;
     
     public Text scoreText;
 
     // Update is called once per frame
     void Update()
     {
-        scoreText.text = "Ram Collected: " + ramCount.ToString();
-       
+        scoreText.text = "Ram Collected: " + gameManager.ramCount.ToString();
+
+
+
+
 
     }
 }

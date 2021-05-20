@@ -7,7 +7,7 @@ public class TriggerScript : MonoBehaviour
 
     
      public GameObject physicalRam;
-    public RamCounter ramCounter;
+     public GameManager gameManager;
 
 
      void OnTriggerEnter(Collider collision)
@@ -16,7 +16,7 @@ public class TriggerScript : MonoBehaviour
         if (collision.tag == "Ram")
         {
 
-            ramCounter.ramCount++;
+            gameManager.ramCount++;
             Destroy(physicalRam);
             
             
