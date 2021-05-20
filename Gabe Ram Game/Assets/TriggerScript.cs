@@ -10,7 +10,7 @@ public class TriggerScript : MonoBehaviour
     public RamCounter ramCounter;
 
 
-    public void OnTriggerEnter(Collider collision)
+     void OnTriggerEnter(Collider collision)
     {
 
         if (collision.tag == "Ram")
