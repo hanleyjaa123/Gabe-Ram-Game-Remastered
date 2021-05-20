@@ -6,7 +6,7 @@ public class TriggerScript : MonoBehaviour
 {
 
     
-     public GameObject physicalRam;
+     // public GameObject physicalRam;
      public GameManager gameManager;
 
 
@@ -17,7 +17,9 @@ public class TriggerScript : MonoBehaviour
         {
 
             gameManager.ramCount++;
-            Destroy(physicalRam);
+
+            // multi objects that need to be destroyed, i tried using this but it destroys whatever object with tag ram comes first in hierarchy 
+            Destroy(GameObject.FindWithTag("Ram"));
             
             
 
