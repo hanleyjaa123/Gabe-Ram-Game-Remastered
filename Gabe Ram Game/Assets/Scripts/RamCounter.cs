@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class RamCounter : MonoBehaviour
 {
 
-    public GameManager gameManager;
+    public gameManager gameManager;
     
     public Text scoreText;
 

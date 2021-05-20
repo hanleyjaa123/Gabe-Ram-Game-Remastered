@@ -7,7 +7,7 @@ public class TriggerScript : MonoBehaviour
 
     
      // public GameObject physicalRam;
-     public GameManager gameManager;
+     public gameManager gameManager;
 
 
      void OnTriggerEnter(Collider collision)
@@ -19,7 +19,7 @@ public class TriggerScript : MonoBehaviour
             gameManager.ramCount++;
 
             // multi objects that need to be destroyed, i tried using this but it destroys whatever object with tag ram comes first in hierarchy 
-            Destroy(GameObject.FindWithTag("Ram"));
+            //Destroy(GameObject.FindWithTag("Ram"));
             
             
 
